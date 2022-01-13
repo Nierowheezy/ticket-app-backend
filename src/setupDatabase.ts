@@ -14,7 +14,7 @@ async function connectToDatabase(): Promise<boolean> {
   };
 
   try {
-    await mongoose.connect(`${process.env.MONGODB_URL}`, connectionOptions);
+    await mongoose.connect(`${process.env.MONGO_URI}`, connectionOptions);
     console.log('Connected to database');
     return true;
   } catch (error) {
