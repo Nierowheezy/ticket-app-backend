@@ -1,5 +1,8 @@
 {
   "name": "ticket-app-be",
+  "engines": {
+    "node": "14.18.3"
+  },
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -13,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "@hapi/joi": "^17.1.0",
+    "@types/socket.io-parser": "^3.0.0",
     "bcryptjs": "^2.4.3",
     "dotenv": "^8.2.0",
     "http-status-codes": "^1.4.0",
@@ -22,7 +26,8 @@
     "koa-router": "^8.0.7",
     "koa2-cors": "^2.0.6",
     "mongoose": "^5.8.11",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.3.0",
+    "socket.io-parser": "^4.1.1"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
